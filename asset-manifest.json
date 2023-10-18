@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tickets-front/static/css/main.e6c13ad2.css",
+    "main.js": "/tickets-front/static/js/main.a3ed8213.js",
+    "index.html": "/tickets-front/index.html",
+    "main.e6c13ad2.css.map": "/tickets-front/static/css/main.e6c13ad2.css.map",
+    "main.a3ed8213.js.map": "/tickets-front/static/js/main.a3ed8213.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.a3ed8213.js"
+  ]
+}
