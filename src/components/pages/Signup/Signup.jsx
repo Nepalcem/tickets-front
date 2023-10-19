@@ -7,7 +7,7 @@ export default function Signup() {
     <SignUpMain>
       <div className="main-container">
         <SignupImage src={SignUpBackground} alt="hero-background" />
-        <FormBlock></FormBlock>
+        <FormBlock><h2 className='login-title'>Register</h2></FormBlock>
       </div>
     </SignUpMain>
   );
