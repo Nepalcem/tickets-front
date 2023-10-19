@@ -1,12 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavButton, NavTag } from "./HeaderNav.styled";
 
 export default function HeaderNav() {
   return (
-    <nav>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/login">Login</NavLink>
-      <NavLink to="/signup">Signup</NavLink>
-    </nav>
+    <NavTag>
+      <NavButton to="/">Home</NavButton>
+      <NavButton to="/login">Login</NavButton>
+      <NavButton to="/signup">Signup</NavButton>
+    </NavTag>
   );
 }
