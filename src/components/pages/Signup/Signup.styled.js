@@ -8,7 +8,7 @@ export const SignUpMain = styled.main`
   & .main-container {
     margin: 0 auto;
     max-width: 1440px;
-    position: relative;
+    display: flex;
   }
 `;
 export const FormBlock = styled.div`
