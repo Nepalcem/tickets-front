@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/934.0aa11a27.chunk.js","mappings":"sLAEe,SAASA,IACtB,OAAOC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,SACd,C","sources":["components/pages/Deals.jsx"],"sourcesContent":["import React from \"react\";\n\nexport default function Deals() {\n  return <div>Deals</div>;\n}\n"],"names":["Deals","_jsx","children"],"sourceRoot":""}
