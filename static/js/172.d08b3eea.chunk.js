@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktickets_front=self.webpackChunktickets_front||[]).push([[172],{8172:function(n,t,e){e.r(t),e.d(t,{default:function(){return u}});e(2791);var r=e(3329);function u(){return(0,r.jsx)("div",{children:"Login"})}}}]);
-//# sourceMappingURL=172.d08b3eea.chunk.js.map
