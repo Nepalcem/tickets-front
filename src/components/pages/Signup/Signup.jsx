@@ -6,17 +6,13 @@ import SignupForm from "../../SignupForm/SignupForm";
 import authOperations from "../../redux/auth/authOperations";
 import { toast } from "react-toastify";
 
-
-
 export default function Signup() {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const handleSignupSubmit = (values, actions) => {
     const { username, email, password } = values;
     dispatch(authOperations.register({ username, email, password }));
-    toast.success(
-      "Form sent. Please await for a few seconds!", {autoClose: 20000}
-    );
+    toast.success("Form sent. Please await for a few seconds!");
     actions.resetForm();
   };
 

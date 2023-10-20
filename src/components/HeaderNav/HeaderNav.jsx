@@ -21,9 +21,14 @@ export default function HeaderNav() {
           <NavButton to="/signup">Signup</NavButton>
         </>
       ) : (
-        <NavButton to="/" onClick={handleLogout}>
-          Log Out
-        </NavButton>
+        <>
+          <NavButton to="/deals">
+            Deals
+          </NavButton>
+          <NavButton to="/" onClick={handleLogout}>
+            Log Out
+          </NavButton>
+        </>
       )}
     </NavTag>
   );

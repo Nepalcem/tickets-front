@@ -38,7 +38,6 @@ const logIn = createAsyncThunk("auth/login", async (credentials) => {
     const { data } = await axios.post("/users/login", credentials);
 
     token.set(data.token);
-    toast.success("You've successfully logged in to your account!");
     return data;
   } catch (error) {
     toast.error("Ooops. Something went wrong. Try again!");
