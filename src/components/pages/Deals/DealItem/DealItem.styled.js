@@ -10,7 +10,7 @@ export const StyledDealItem = styled.li`
   }
   width: 616px;
   border-radius: 5px;
-  padding: 297px 0 20px 14px;
+  padding: 287px 0 20px 14px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   &:hover {
