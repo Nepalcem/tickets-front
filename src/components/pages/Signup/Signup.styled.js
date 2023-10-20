@@ -12,11 +12,13 @@ export const SignUpMain = styled.main`
   }
 `;
 export const FormBlock = styled.div`
+padding: 255px 100px;
   & .login-title {
     font-size: 28px;
     color: #172234;
     font-weight: 700;
     font-family: Merriweather;
     line-height: 34px;
+    margin-bottom: 20px;
   }
 `;

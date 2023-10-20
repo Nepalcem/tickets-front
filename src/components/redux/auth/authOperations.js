@@ -19,12 +19,15 @@ const register = createAsyncThunk(
     try {
       const { data } = await axios.post("/users/register", credentials);
       toast.success(
-        "Registration completed! You will be now redirected to the login page."
+        "Registration completed! You may now go to the Login page."
       );
-
       return data;
     } catch (error) {
-      toast.error("Ooops. Something went wrong");
+      if (error.response && error.response.status === 409) {
+        toast.error(error.response.data.message);
+      } else {
+        toast.error("Ooops. Something went wrong");
+      }
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -33,6 +36,7 @@ const register = createAsyncThunk(
 const logIn = createAsyncThunk("auth/login", async (credentials) => {
   try {
     const { data } = await axios.post("/users/login", credentials);
+    console.log(data);
     token.set(data.token);
     toast.success("You've successfully logged in to your account!");
     return data;

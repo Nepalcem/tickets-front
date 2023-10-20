@@ -6,7 +6,7 @@ import RestrictedRoute from "./routes/RestrictedRoute";
 import { ToastContainer } from "react-toastify";
 const Home = lazy(() => import("./pages/Home/Home"));
 const Signup = lazy(() => import("./pages/Signup/Signup"));
-const Login = lazy(() => import("./pages/Login"));
+const Login = lazy(() => import("./pages/Login/Login"));
 const Deals = lazy(() => import("./pages/Deals"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
