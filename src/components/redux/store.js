@@ -3,6 +3,7 @@ import { persistStore } from "redux-persist";
 
 
 import { persistedAuthReducer } from "./auth/authSlice";
+import { dealsSlice } from "./deals/dealsSlice";
 
 import {
   FLUSH,
@@ -16,6 +17,7 @@ import {
 export const store = configureStore({
   reducer: {
     auth: persistedAuthReducer,
+    deals: dealsSlice.reducer
   },
   middleware: (getDefaultMiddleware) => [
     ...getDefaultMiddleware({

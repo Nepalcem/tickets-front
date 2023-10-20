@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./components/redux/store";
 
+
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 import App from "./components/App";
@@ -15,7 +16,7 @@ root.render(
     <Provider store={store}>
       <BrowserRouter basename="/tickets-front">
         <PersistGate loading={null} persistor={persistor}>
-          <App />
+            <App />
         </PersistGate>
       </BrowserRouter>
     </Provider>
