@@ -4,7 +4,7 @@ import { SignUpMain, SignupImage, FormBlock } from "../Signup/Signup.styled";
 import SignUpBackground from "../../images/signup-image.jpg";
 import SignupForm from "../../SignupForm/SignupForm";
 import authOperations from "../../redux/auth/authOperations";
-import { toast } from "react-toastify";
+
 
 export default function LogIn() {
   const dispatch = useDispatch();
