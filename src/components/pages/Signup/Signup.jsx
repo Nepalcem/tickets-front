@@ -4,16 +4,22 @@ import { SignUpMain, SignupImage, FormBlock } from "./Signup.styled";
 import SignUpBackground from "../../images/signup-image.jpg";
 import SignupForm from "../../SignupForm/SignupForm";
 import authOperations from "../../redux/auth/authOperations";
-import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const handleSignupSubmit = (values, actions) => {
+  const handleSignupSubmit = async (values, actions) => {
     const { username, email, password } = values;
-    dispatch(authOperations.register({ username, email, password }));
-    toast.success("Form sent. Please await for a few seconds!");
+    const data = await dispatch(
+      authOperations.register({ username, email, password })
+    );
+    console.log(data);
     actions.resetForm();
+    if (data.type.includes("fulfilled")) {
+      navigate("/login");
+    }
   };
 
   return (

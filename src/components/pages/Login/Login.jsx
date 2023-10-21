@@ -12,7 +12,6 @@ export default function LogIn() {
   const handleLoginSubmit = (values, actions) => {
     const { email, password } = values;
     dispatch(authOperations.logIn({ email, password }));
-    toast.success("Form sent. Please await for a few seconds!");
     actions.resetForm();
   };
 

@@ -19,7 +19,7 @@ const register = createAsyncThunk(
     try {
       const { data } = await axios.post("/users/register", credentials);
       toast.success(
-        "Registration completed! You may now go to the Login page."
+        "Registration completed! You will be now redirected to the Login page."
       );
       return data;
     } catch (error) {
