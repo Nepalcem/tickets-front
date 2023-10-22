@@ -15,7 +15,6 @@ export default function Signup() {
     const data = await dispatch(
       authOperations.register({ username, email, password })
     );
-    console.log(data);
     actions.resetForm();
     if (data.type.includes("fulfilled")) {
       navigate("/login");
