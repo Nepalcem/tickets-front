@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tickets-front/static/css/main.7af77f2a.css",
-    "main.js": "/tickets-front/static/js/main.7941d289.js",
+    "main.js": "/tickets-front/static/js/main.3773ed48.js",
     "static/js/387.ad46e844.chunk.js": "/tickets-front/static/js/387.ad46e844.chunk.js",
     "static/js/803.2b6a4d70.chunk.js": "/tickets-front/static/js/803.2b6a4d70.chunk.js",
     "static/js/319.0f7f0311.chunk.js": "/tickets-front/static/js/319.0f7f0311.chunk.js",
@@ -13,7 +13,7 @@
     "static/media/image-home-overlay.png": "/tickets-front/static/media/image-home-overlay.cafb555c1954f5b7f214.png",
     "index.html": "/tickets-front/index.html",
     "main.7af77f2a.css.map": "/tickets-front/static/css/main.7af77f2a.css.map",
-    "main.7941d289.js.map": "/tickets-front/static/js/main.7941d289.js.map",
+    "main.3773ed48.js.map": "/tickets-front/static/js/main.3773ed48.js.map",
     "387.ad46e844.chunk.js.map": "/tickets-front/static/js/387.ad46e844.chunk.js.map",
     "803.2b6a4d70.chunk.js.map": "/tickets-front/static/js/803.2b6a4d70.chunk.js.map",
     "319.0f7f0311.chunk.js.map": "/tickets-front/static/js/319.0f7f0311.chunk.js.map",
@@ -23,6 +23,6 @@
   },
   "entrypoints": [
     "static/css/main.7af77f2a.css",
-    "static/js/main.7941d289.js"
+    "static/js/main.3773ed48.js"
   ]
 }
