@@ -1,18 +1,19 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
+export const ForgotPasswordNav = styled(NavLink)`
+  cursor: pointer;
+  color: #b29f7e;
+  font-size: 14px;
+  line-height: 22px;
+  align-self: flex-end;
+  margin-top: -10px;
+`;
 
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  & .forgot-password {
-    cursor: pointer;
-    color: #b29f7e;
-    font-size: 14px;
-    line-height: 22px;
-    align-self: flex-end;
-    margin-top: -10px;
-  }
   & .form-center-align {
     align-self: center;
   }
@@ -51,11 +52,11 @@ export const FormField = styled.div`
     border-radius: 5px;
     /* border: 1px solid
       ${(props) =>
-        props.isvalid
-          ? "green"
-          : props.isvalid === false
-          ? "red"
-          : "transparent"}; */
+      props.isvalid
+        ? "green"
+        : props.isvalid === false
+        ? "red"
+        : "transparent"}; */
     color: #172234;
   }
   & input::placeholder {

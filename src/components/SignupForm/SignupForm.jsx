@@ -6,6 +6,7 @@ import {
   FormField,
   ErrorMessageStyled,
   SignupButton,
+  ForgotPasswordNav
 } from "./SignupForm.styled";
 
 
@@ -42,8 +43,7 @@ const SignupForm = ({ isLogin, onSubmit }) => {
   return (
     <StyledForm onSubmit={formik.handleSubmit}>
       {!isLogin && (
-        <FormField
-        >
+        <FormField>
           <label htmlFor="username">Username</label>
           <input
             type="text"
@@ -60,11 +60,11 @@ const SignupForm = ({ isLogin, onSubmit }) => {
         </FormField>
       )}
       <FormField
-        // isvalid={
-        //   formik.touched.email &&
-        //   !formik.errors.email &&
-        //   formik.errors.email !== ""
-        // }
+      // isvalid={
+      //   formik.touched.email &&
+      //   !formik.errors.email &&
+      //   formik.errors.email !== ""
+      // }
       >
         <label htmlFor="email">Email</label>
         <input
@@ -103,8 +103,10 @@ const SignupForm = ({ isLogin, onSubmit }) => {
       <SignupButton type="submit">{isLogin ? "Login" : "Signup"}</SignupButton>
       {isLogin && (
         <p className="form-center-align">
-          <span className="blue-regular-text"> Don’t have account?</span>
-          <span className="forgot-password"> Sign Up</span>
+          <span className="blue-regular-text"> Don’t have account? </span>
+          <span className="forgot-password">
+            <ForgotPasswordNav to="/signup">Sign Up</ForgotPasswordNav>
+          </span>
         </p>
       )}
     </StyledForm>
