@@ -26,7 +26,13 @@ const authSlice = createSlice({
         state.username = "";
         state.token = "";
         state.isLoggedIn = false;
+      })
+      .addCase(authOperations.fetchCurrentUser.fulfilled, (state, action) => {
+        state.username = action.payload.username;
+        state.isLoggedIn = true;
       });
+      
+    
     //set Current User pending
     //   .addCase(authOperations.fetchCurrentUser.pending, (state) => {
     //     state.isFetchingCurrentUser = true;

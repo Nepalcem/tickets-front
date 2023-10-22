@@ -1,5 +1,5 @@
 import React from "react";
-import { NavButton, NavTag } from "./HeaderNav.styled";
+import { NavButton, NavTag, NavigationButton } from "./HeaderNav.styled";
 import { selectIsLoggedIn } from "../redux/selectors";
 import { useSelector, useDispatch } from "react-redux";
 import authOperations from "../redux/auth/authOperations";
@@ -14,7 +14,7 @@ export default function HeaderNav() {
 
   return (
     <NavTag>
-      <NavButton to="/">Home</NavButton>
+      <NavButton key={'home'} to="/">Home</NavButton>
       {!isLoggedIn ? (
         <>
           <NavButton to="/login">Login</NavButton>
@@ -25,9 +25,9 @@ export default function HeaderNav() {
           <NavButton to="/deals">
             Deals
           </NavButton>
-          <NavButton to="/" onClick={handleLogout}>
+          <NavigationButton onClick={handleLogout}>
             Log Out
-          </NavButton>
+          </NavigationButton>
         </>
       )}
     </NavTag>
