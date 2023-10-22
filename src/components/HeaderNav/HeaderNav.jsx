@@ -14,7 +14,7 @@ export default function HeaderNav() {
 
   return (
     <NavTag>
-      <NavButton key={'home'} to="/">Home</NavButton>
+      <NavButton to="/">Home</NavButton>
       {!isLoggedIn ? (
         <>
           <NavButton to="/login">Login</NavButton>

@@ -7,7 +7,7 @@ const initialState = {
   username: "",
   token: null,
   isLoggedIn: false,
-  //   isFetchingCurrentUser: true,
+  isFetchingCurrentUser: false,
 };
 
 const authSlice = createSlice({
@@ -30,23 +30,14 @@ const authSlice = createSlice({
       .addCase(authOperations.fetchCurrentUser.fulfilled, (state, action) => {
         state.username = action.payload.username;
         state.isLoggedIn = true;
+        state.isFetchingCurrentUser = false;
+      })
+      .addCase(authOperations.fetchCurrentUser.pending, (state, action) => {
+        state.isFetchingCurrentUser = true;
+      })
+      .addCase(authOperations.fetchCurrentUser.rejected, (state, action) => {
+        state.isFetchingCurrentUser = false;
       });
-      
-    
-    //set Current User pending
-    //   .addCase(authOperations.fetchCurrentUser.pending, (state) => {
-    //     state.isFetchingCurrentUser = true;
-    //   })
-    //set Current User fulfilled
-    //   .addCase(authOperations.fetchCurrentUser.fulfilled, (state, action) => {
-    //     state.username = action.payload;
-    //     state.isLoggedIn = true;
-    //     state.isFetchingCurrentUser = false;
-    //   })
-    //set Current User rejected
-    //   .addCase(authOperations.fetchCurrentUser.rejected, (state) => {
-    //     state.isFetchingCurrentUser = false;
-    //   })
   },
 });
 
