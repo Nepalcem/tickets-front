@@ -1,30 +1,28 @@
 {
   "files": {
     "main.css": "/tickets-front/static/css/main.7af77f2a.css",
-    "main.js": "/tickets-front/static/js/main.81aef430.js",
+    "main.js": "/tickets-front/static/js/main.2ca2f21d.js",
     "static/js/387.ad46e844.chunk.js": "/tickets-front/static/js/387.ad46e844.chunk.js",
     "static/js/803.df6f664c.chunk.js": "/tickets-front/static/js/803.df6f664c.chunk.js",
     "static/js/319.5171faf9.chunk.js": "/tickets-front/static/js/319.5171faf9.chunk.js",
-    "static/js/917.649e8f45.chunk.js": "/tickets-front/static/js/917.649e8f45.chunk.js",
+    "static/js/233.e3431531.chunk.js": "/tickets-front/static/js/233.e3431531.chunk.js",
     "static/js/940.4b5f6418.chunk.js": "/tickets-front/static/js/940.4b5f6418.chunk.js",
     "static/js/568.a4165edb.chunk.js": "/tickets-front/static/js/568.a4165edb.chunk.js",
-    "static/js/881.2312c9cc.chunk.js": "/tickets-front/static/js/881.2312c9cc.chunk.js",
     "static/media/image_home.jpg": "/tickets-front/static/media/image_home.8d43c5202b24bcc96506.jpg",
     "static/media/signup-image.jpg": "/tickets-front/static/media/signup-image.92fbdd8f6c6b4fef778d.jpg",
     "static/media/image-home-overlay.png": "/tickets-front/static/media/image-home-overlay.cafb555c1954f5b7f214.png",
     "index.html": "/tickets-front/index.html",
     "main.7af77f2a.css.map": "/tickets-front/static/css/main.7af77f2a.css.map",
-    "main.81aef430.js.map": "/tickets-front/static/js/main.81aef430.js.map",
+    "main.2ca2f21d.js.map": "/tickets-front/static/js/main.2ca2f21d.js.map",
     "387.ad46e844.chunk.js.map": "/tickets-front/static/js/387.ad46e844.chunk.js.map",
     "803.df6f664c.chunk.js.map": "/tickets-front/static/js/803.df6f664c.chunk.js.map",
     "319.5171faf9.chunk.js.map": "/tickets-front/static/js/319.5171faf9.chunk.js.map",
-    "917.649e8f45.chunk.js.map": "/tickets-front/static/js/917.649e8f45.chunk.js.map",
+    "233.e3431531.chunk.js.map": "/tickets-front/static/js/233.e3431531.chunk.js.map",
     "940.4b5f6418.chunk.js.map": "/tickets-front/static/js/940.4b5f6418.chunk.js.map",
-    "568.a4165edb.chunk.js.map": "/tickets-front/static/js/568.a4165edb.chunk.js.map",
-    "881.2312c9cc.chunk.js.map": "/tickets-front/static/js/881.2312c9cc.chunk.js.map"
+    "568.a4165edb.chunk.js.map": "/tickets-front/static/js/568.a4165edb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7af77f2a.css",
-    "static/js/main.81aef430.js"
+    "static/js/main.2ca2f21d.js"
   ]
 }
