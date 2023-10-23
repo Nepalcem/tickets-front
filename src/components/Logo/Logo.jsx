@@ -1,15 +1,15 @@
 import React from "react";
-import { StyledLogo } from "./Logo.styled";
+import { StyledLogo, LogoP } from "./Logo.styled";
 
 export default function Logo() {
   return (
-    <p className="logo">
+    <LogoP>
       <StyledLogo
         href="https://www.linkedin.com/in/michael-lykhovyd/"
         target="_blank"
       >
         Michael Lykhovyd
       </StyledLogo>
-    </p>
+    </LogoP>
   );
 }

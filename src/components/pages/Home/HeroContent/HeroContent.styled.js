@@ -1,11 +1,18 @@
 import styled from "styled-components";
+import { desktop, tablet } from "../../../utils/mobileBreakpoints";
 
 export const HeroContentDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 297px 0;
+  padding: 100px 15px;
+  @media screen and (min-width: ${tablet}) {
+    padding: 175px 0 175px 0;
+  }
+  @media screen and (min-width: ${desktop}) {
+    padding: 297px 0 377px 0;
+  }
   & .hero-text {
     font-size: 24px;
     line-height: 32px;

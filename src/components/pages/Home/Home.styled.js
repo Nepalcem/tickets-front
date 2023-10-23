@@ -1,26 +1,16 @@
 import styled from "styled-components";
+import HeroBg from "../../images/image_home.jpg";
+import HeroTransparentBg from "../../images/image-home-overlay.png";
+import { desktop } from "../../utils/mobileBreakpoints";
 
 export const Main = styled.main`
   text-align: center;
   & .main-container {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: ${desktop};
     position: relative;
+    background-image: url(${HeroTransparentBg}), url(${HeroBg});
+    background-position: top;
+    background-repeat: no-repeat;
   }
-`;
-
-export const HeroImg = styled.img`
-  display: inline-block;
-  position: absolute;
-  left:0;
-  top: -82px;
-  z-index: -2;
-`;
-
-export const HeroTransparentImg = styled.img`
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: -82px;
-  z-index: -1;
 `;
