@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { desktop, tablet } from "../utils/mobileBreakpoints";
 
 export const ForgotPasswordNav = styled(NavLink)`
   cursor: pointer;
@@ -43,7 +44,13 @@ export const FormField = styled.div`
     font-family: Lato;
     font-size: 14px;
     line-height: 22px;
-    width: 308px;
+    width: 220px;
+    @media screen and (min-width: ${tablet}) {
+      width: 260px;
+    }
+    @media screen and (min-width: ${desktop}) {
+      width: 308px;
+    }
     padding: 14px 20px 12px 20px;
     background-color: #e0e0e0;
     outline: none;
@@ -81,6 +88,14 @@ export const SignupButton = styled.button`
   font-weight: 700;
   font-family: Merriweather;
   margin-top: 30px;
+  width: 260px;
+  @media screen and (min-width: ${tablet}) {
+    width: 308px;
+  }
+  @media screen and (min-width: ${desktop}) {
+    width: 348px;
+  }
+
   &:hover {
     background-color: #172234;
   }
